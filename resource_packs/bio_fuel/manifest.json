@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Bio-Fuel Expansion",
+    "description": "A pack that adds multiple new fuel sources to the game. Required resource pack.",
+    "uuid": "cdc1aa1c-8cf6-4807-bd0c-62cfe1ee99a9",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      50
+    ]
+  },
+  "modules": [
+    {
+      "description": "Bio-Fuel",
+      "type": "resources",
+      "uuid": "7c2f321d-33b5-4019-8397-ba068917535a",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "1e699ed3-602e-4076-8b1f-0619fe57185e",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

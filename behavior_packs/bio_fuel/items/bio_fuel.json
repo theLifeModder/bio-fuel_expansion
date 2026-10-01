@@ -1,0 +1,38 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "teches:bio_fuel",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:icon": {
+        "textures": {
+          "default": "bio_fuel"
+        }
+      },
+      "minecraft:display_name": {
+        "value": "Bio-Fuel"
+      },
+      "minecraft:fuel": {
+        "duration": 200
+      },
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": 0.6,
+        "can_always_eat": false
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:custom_components": [
+        "teches:nausea_on_consume"
+      ]
+    }
+  }
+}

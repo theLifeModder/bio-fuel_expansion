@@ -1,0 +1,11 @@
+{
+  "resource_pack_name": "Bio-Fuel",
+  "texture_data": {
+    "bio_fuel": {
+      "textures": "textures/items/bio_fuel"
+    },
+    "teches:animal_lard": {
+      "textures": "textures/items/animal_lard"
+    }
+  }
+}
