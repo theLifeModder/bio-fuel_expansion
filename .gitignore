@@ -1,1 +1,13 @@
+# Folders
+
 node_modules/
+.vscode/
+.mct/
+lib/
+dist/
+
+# Individual Files
+
+.env
+.DS_store
+Thumbs.db
