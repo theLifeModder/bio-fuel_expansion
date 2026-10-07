@@ -5,11 +5,7 @@
     "description": "A pack that adds multiple new fuel sources to the game. Required behavior pack.",
     "uuid": "1e699ed3-602e-4076-8b1f-0619fe57185e",
     "version": "0.0.1",
-    "min_engine_version": [
-      1,
-      26,
-      50
-    ]
+    "min_engine_version": [1, 26, 50]
   },
   "modules": [
     {

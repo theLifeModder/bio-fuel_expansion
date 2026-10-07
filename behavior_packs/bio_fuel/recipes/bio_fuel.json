@@ -4,9 +4,7 @@
     "description": {
       "identifier": "teches:bio_fuel_recipe"
     },
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "ingredients": [
       {
         "item": "teches:animal_lard"
