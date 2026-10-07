@@ -1,5 +1,6 @@
 {
   "resource_pack_name": "Bio-Fuel",
+  "texture_name": "atlas.items",
   "texture_data": {
     "bio_fuel": {
       "textures": "textures/items/bio_fuel"
