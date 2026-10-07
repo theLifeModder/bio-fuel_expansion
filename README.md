@@ -2,7 +2,7 @@
 page_type: sample
 author: lifeModder19135
 description: add-on details
-ms.author: ntolbertu85@gmail.com
+ms.author: lifemodder19135@gmail.com
 ms.date: 10/01/2026
 languages:
   - typescript
