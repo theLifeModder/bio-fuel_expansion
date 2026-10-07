@@ -11,3 +11,9 @@ dist/
 .env
 .DS_store
 Thumbs.db
+
+# single-user globs
+
+# for Nathan Tolbert
+
+.docs/githubinfo.json
