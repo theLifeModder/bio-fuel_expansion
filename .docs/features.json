@@ -1,0 +1,109 @@
+[
+  {
+    "feature": {
+      "type": "new item",
+      "contents": {
+        "item": {
+          "name": "Bio Fuel",
+          "description": "Bio Fuel is a renewable energy source in Minecraft, crafted from animal lard, sugar cane, and bamboo, in a shapeless recipe. It can be used as a farmable fuel source for furnace arrays and anywhere smelting is part of an automated process (in gold farm sorting systems, for example). It is about as efficient as kelp blocks, but with the added bonus that with the addition of the \"Technical Enchantments\" add-on, it can be enchanted by the multi-stack to increase efficiency to that of lava buckets!",
+          "consumeable": true,
+          "max stack size": 64,
+          "other functions": [
+            {
+              "function": "craftable",
+              "recipe": {
+                "type": "shapeless",
+                "ingredients": [
+                  {
+                    "item": "minecraft:animal_lard"
+                  },
+                  {
+                    "item": "minecraft:sugar_cane"
+                  },
+                  {
+                    "item": "minecraft:bamboo"
+                  }
+                ],
+                "result": {
+                  "item": "bio_fuel:bio_fuel",
+                  "count": 1
+                }
+              }
+            },
+            {
+              "function": "effect_adding",
+              "effects": [
+                {
+                  "effect type": "nausea",
+                  "duration": 100
+                }
+              ]
+            },
+            {
+              "function": "fuel",
+              "burn time": 200
+            },
+            {
+              "function": "enchantable",
+              "required pack": "Technical Enchantments",
+              "enchanting station": "Enchanting table alternate ui",
+              "enchantments": [
+                {
+                  "enchantment": "smeltmore",
+                  "effect": "increases fuel efficiency to that of lava buckets"
+                },
+                {
+                  "enchantment": "feedmore",
+                  "effect": "increases it's value as a foodsource."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "feature": {
+      "type": "new item",
+      "contents": {
+        "item": {
+          "name": "animal lard",
+          "description": "desc. needed",
+          "consumeable": true,
+          "max stack size": 64,
+          "other functions": [
+            {
+              "function": "food source",
+              "food value": 1,
+              "saturation": 0.3
+            },
+            {
+              "function": "fuel",
+              "burn time": 2
+            },
+            {
+              "function": "dropped by",
+              "mobs": ["minecraft:pig", "minecraft:cow", "minecraft:sheep", "minecraft:strider"]
+            },
+            {
+              "function": "enchantable",
+              "required pack": "Technical Enchantments",
+              "enchanting station": "Enchanting table alternate ui",
+              "enchantments": [
+                {
+                  "enchantment": "smeltmore",
+                  "effect": "increases fuel efficiency to that of lava buckets"
+                },
+                {
+                  "enchantment": "feedmore",
+                  "effect": "increases it's value as a foodsource."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+]
