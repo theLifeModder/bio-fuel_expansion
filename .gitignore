@@ -1,4 +1,4 @@
-# Folders
+# Folders:
 
 node_modules/
 .vscode/
@@ -6,14 +6,15 @@ node_modules/
 lib/
 dist/
 
-# Individual Files
+# Individual Files:
 
 .env
 .DS_store
 Thumbs.db
 
-# single-user globs
+# single-user globs...
 
-# for Nathan Tolbert
+# for theLifeMModder:
 
 .docs/githubinfo.json
+.docs/project-gitconfig-contents-10082026.ini
