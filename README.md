@@ -79,3 +79,32 @@ Also, if you are a technical bedrocker (particularly farm builders/designers), t
 
 email: ntolbertu85@gmail.com
 name: Nate Tolbert
+
+## DEVELOPER / TESTER COMMANDS:
+
+$ teches install –version ( `dist` | `stable` | `dev` | <version> ) &( –reinstall –save-old ^^^<project-name> | –check ^^^<project-name> | –list )
+
+        - not yet installed
+
+$ teches config (--update-version "incr|change::dist|stable|dev") | ^^^(--add-key "<section>::<key-name>::<value>" | --update-key "<section>::<key-name>::<value>" | --del-key "<section>::<key-name>" | --add-section <name> --delete-section <name>) | --get-section) (--location <loc> | --l <loc>)
+
+        - not yet installed
+
+$ teches infra --args
+
+        - not yet installed
+
+$ teches repo ( –branch ( ({ action }add-dev, add-stable, & ) | ( {<action>} `add-version`, `rem-version` ) <version> | ( { action } `add-feature`, `rem-feature` ) <feature-desc> | ( {<action>} `rem-dev`, `rem-stable`, `frc-rem-dev`, `frc-rem-stable` ) ({<which>} &( ( `oldest` | o ) | ( `newest` | n} | <version> ) | `frc-rem` ({<type>} `dev`, `stable`, `feature`) <version-or-feature> ) | –commit ( { action } `format-msg`, `ch-msg`, `add-path`, `ch-path`, `ch-author`, `delete-head`, `head-at` )> <commit-id> |  `delete-head` )  &<project>
+
+        - not yet installed
+
+$ teches fs (<--create|-c> | <--edit|-e> | <--delete|-d>) (-f) <path-or-file>
+        
+        - (-f) specifies that <path-or-file> is a path to a folder, and only works with --create and --delete
+        - not yet installed
+
+$ teches project (<--create|-c> | <--copy|-C> | <--edit|-e> | <--delete|-d>) <path>
+
+        - <path> specifies path to project's top-level folder
+        - not yet installed
+  
