@@ -1,0 +1,87 @@
+#
+# Sections at the top of file are for general settings that affect multiple commands or other parts of the infrastructure.
+#
+[project]
+    # This is a comma-separated list of all Tech-ES projects contained in the teches/ folder
+    # You dont need to touch this list. It os automatically updated by teches commands such as "$ teches project --init"
+    children = "bio-fuel expansion"
+[versions]
+    # version currently in distirbution, or the version that is currently being used in production.
+    dist = na
+    dist-prev = na
+    dist-nxt = na
+    # latest stable version. To be considered stable, it needs to be a version that is not in development, and is not a pre-release version. It is a version that is considered stable enough for production use.
+    stable = 0.0.1-alpha
+    stable-prev = na
+    stable-nxt = 0.0.2-alpha
+    # version currently in development, or the version that is currently being worked on.
+    dev = 0.0.2-alpha
+    dev-prev = 0.0.1-alpha
+    dev-nxt = 0.0.3-alpha
+#------------------------------------------------------------------------
+#
+#Sections pertaining to specific commands
+#
+[teches-repo branch]
+    # this decides how the command increments the version number when running '$ teches repo --branch <action>' with an action that uses incrementing.
+    # values: 'first': increments the leftmost number, 'second': increments the second-from-leftmost number, 'third': increments the third-from-leftmost number, 'last': increments the rightmost number
+    vrsn-increment = last
+[teches-install]
+    # If --version is omitted, the program tries to get these versions in the order listed.
+    version-prefs-list = dist, stable, dev
+[teches-install check]
+    # word for word, this is what is printed to the console when a check returns true (the project being checked is installed).
+    truthy-output = true
+    # this is what is printed to the console when a check returns false (the project being checked is not installed).
+    nontruthy-output = true
+    #
+    # this decides the output format for the check command, and whether that output is printed on a single line or multiple lines. 
+    # There are 3 possible values: 'single', 'multi', 'many'. 
+    # The outputs for each are shown below for a case where two projects (proj1, proj2) are checked, and only proj1 is installed:
+    #single:
+    #   proj1: true, proj2: false
+    #multi:
+    #   proj1: true
+    #   proj2: false
+    #many:
+    #   proj1 
+    #   true
+    #   proj2 
+    #   false
+    output-line-use-fomat = multi
+[teches-install list]
+    # Controls what is printed to the terminal when the list command finds no installations
+    # You can change it to "True" or "true" to make it more function-friendly, for when the command is being run, and it's output consumed, by code.
+    output-for-empty-list = none
+    # Determines what the console output text will look like and how many lines it will be written to
+    # Output for list where 3 projects are installed: proj1, whose version is 1.0.1, proj2, whose version is version 5.0.0. and proj3, whose version is version 0.0.6-alpha
+    #single
+    #   proj1 1.0.1 proj2 5.0.0 proj3 0.0.6-alpha
+    #multi
+    #   proj1 1.0.1 
+    #   proj2 5.0.0 
+    #   proj3 0.0.6-alpha
+    #verbose
+    #   Installations
+    #   ---------------------------
+    #      item 1
+    #      name:
+    #          proj1
+    #      version:
+    #          1.0.1
+    #      item 2
+    #      name:
+    #          proj2
+    #      version:
+    #          5.0.0
+    #      item 3
+    #      name:
+    #          proj3
+    #      version:
+    #          0.0.6-alpha
+    output-line-format = multi
+[teches-config create-new]
+    default-location-path = {project-location}/teches-env/tesconfig
+[teches-config check-file]
+    # output of --check-file if the validated config has no errors
+    linter-success-output = true
